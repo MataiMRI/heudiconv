@@ -3,6 +3,8 @@ name: Build Docker image and push to GitHub container registry
 on:
   workflow_dispatch:
   push:
+    tags:
+      - 'v*'
 
 env:
   REGISTRY: ghcr.io
